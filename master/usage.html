@@ -4,17 +4,15 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Usage &mdash; PowerHub 2.0.0 documentation</title>
+  <title>Usage &mdash; PowerHub 2.0.1 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-        <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
         <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/js/theme.js"></script>
@@ -36,7 +34,7 @@
             PowerHub
           </a>
               <div class="version">
-                2.0.0
+                2.0.1
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -194,6 +192,9 @@ can be HTTP or HTTPS (SMB might be coming in the future), in which case the
 download cradle can be configured such the system proxy is used to access
 the PowerHub host. In case of HTTPS we can do certificate pinning, use the
 Windows certificate store or disable verification entirely.</p>
+<p>Also, some versions of Windows are reluctant to use TLSv1.2 for whatever
+reason. There is a checkbox to enforce TLSv1.2 in case your system on which
+the Python backend is running does not support earlier versions.</p>
 <p>The AMSI bypass can be chosen as well as the key exchange. The key, with
 which the RC4 and AES encryption is used, will be exchanged using the
 Diffie-Hellman (DH) protocol by default. Note that no host verification will be
@@ -403,7 +404,7 @@ the script:</p>
   <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
     <span class="rst-current-version" data-toggle="rst-current-version">
       <span class="fa fa-book"> Read the Docs</span>
-      v: 2.0.0
+      v: 2.0.1
       <span class="fa fa-caret-down"></span>
     </span>
     <div class="rst-other-versions">
@@ -411,12 +412,16 @@ the script:</p>
       <dl>
         <dt>Versions</dt>
         
+           <strong> 
+          <dd><a href="/PowerHub/2.0.1/">2.0.1</a></dd>
+           </strong> 
+        
           
-          <dd><a href="/PowerHub/master/">master</a></dd>
+          <dd><a href="/PowerHub/latest/">latest</a></dd>
           
         
           
-          <dd><a href="/PowerHub/2.0.0/">latest</a></dd>
+          <dd><a href="/PowerHub/master/">master</a></dd>
           
         
       </dl>
